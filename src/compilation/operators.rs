@@ -119,6 +119,15 @@ ops! {
     Pow(^)[2] {
         (a: Int, b: Int) -> Int => a.pow(*b as u32),
     }
+    RightShift(>>)[2] {
+        (a: Int, b: Int) -> Int => a >> b,
+    }
+    ZeroFillRightShift(>>>)[2] {
+        (a: Int, b: Int) -> Int => a >>> b,
+    }
+    LeftShift(<<)[2] {
+        (a: Int, b: Int) -> Int => a << b,
+    }
     // Eq(==)[2] {
     //     (a, b) -> Bool => a == b,
 
